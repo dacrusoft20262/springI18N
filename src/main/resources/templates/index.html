@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot I18n</title>
+</head>
+<body>
+    <h1 th:text="#{greeting.welcome}"></h1>
+    <p th:text="#{greeting.description}"></p>
+
+    <hr>
+
+    <p th:text="#{label.change_lang}"></p>
+    <ul>
+        <li><a href="/?lang=es" th:text="#{lang.es}"></a></li>
+        <li><a href="/?lang=en" th:text="#{lang.en}"></a></li>
+    </ul>
+</body>
+</html>
